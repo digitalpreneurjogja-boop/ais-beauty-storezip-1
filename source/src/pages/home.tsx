@@ -10,7 +10,8 @@ import Footer from "@/components/Footer";
 import ProductCard from "@/components/ProductCard";
 import { products, WHATSAPP } from "@/lib/products";
 
-const heroImageUrl = "https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=800&q=90&auto=format&fit=crop";
+import heroBannerImg from "@assets/hero-banner.png";
+const heroImageUrl = heroBannerImg;
 
 const testimonials = [
   { name: "Siti Nurhaliza", initials: "SN", text: "Sangat cocok dengan Bio-Lingzhi. Sirkulasi darah lebih lancar dan badan tidak gampang capek. Sudah 3 bulan konsumsi rutin!", product: "Bio-Lingzhi Pro" },
