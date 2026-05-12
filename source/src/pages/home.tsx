@@ -31,7 +31,7 @@ export default function Home() {
       <Navbar />
 
       {/* HERO */}
-      <section className="relative pt-12 pb-20 md:pt-24 md:pb-32 px-4 md:px-8 lg:px-16 max-w-7xl mx-auto flex flex-col-reverse md:flex-row items-center gap-12">
+      <section id="beranda" className="relative pt-12 pb-20 md:pt-24 md:pb-32 px-4 md:px-8 lg:px-16 max-w-7xl mx-auto flex flex-col-reverse md:flex-row items-center gap-12">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
@@ -106,7 +106,7 @@ export default function Home() {
       </section>
 
       {/* FEATURED PRODUCTS */}
-      <section id="products" className="py-20 px-4 md:px-8 lg:px-16 max-w-7xl mx-auto">
+      <section id="produk" className="py-20 px-4 md:px-8 lg:px-16 max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-serif mb-3">Produk Premium Kami</h2>
           <p className="text-muted-foreground max-w-xl mx-auto text-sm leading-relaxed">
@@ -126,7 +126,7 @@ export default function Home() {
       </section>
 
       {/* BENEFITS */}
-      <section className="py-20 bg-card/50 px-4 md:px-8 lg:px-16">
+      <section id="tentang-kami" className="py-20 bg-card/50 px-4 md:px-8 lg:px-16">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-serif mb-3">Mengapa AIS Beauty?</h2>
@@ -162,7 +162,7 @@ export default function Home() {
       </section>
 
       {/* TESTIMONIALS PREVIEW */}
-      <section className="py-20 px-4 md:px-8 lg:px-16">
+      <section id="testimoni" className="py-20 px-4 md:px-8 lg:px-16">
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
             <div>
@@ -206,7 +206,7 @@ export default function Home() {
       </section>
 
       {/* BLOG PREVIEW */}
-      <section className="py-20 bg-card/50 px-4 md:px-8 lg:px-16">
+      <section id="blog" className="py-20 bg-card/50 px-4 md:px-8 lg:px-16">
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
             <div>
@@ -269,7 +269,7 @@ export default function Home() {
       </section>
 
       {/* CTA BANNER */}
-      <section className="py-16 px-4 md:px-8 lg:px-16 bg-primary/8">
+      <section id="kontak" className="py-16 px-4 md:px-8 lg:px-16 bg-primary/8">
         <div className="max-w-4xl mx-auto text-center">
           <motion.div
             initial={{ opacity: 0, y: 16 }}
