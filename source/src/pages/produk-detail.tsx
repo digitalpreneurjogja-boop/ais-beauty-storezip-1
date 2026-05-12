@@ -48,7 +48,7 @@ export default function ProdukDetail({ slug }: Props) {
 
   if (!product) {
     return (
-      <div className="min-h-screen bg-background font-sans">
+      <div className="min-h-screen bg-background font-sans pt-16 md:pt-20">
         <Navbar />
         <div className="flex flex-col items-center justify-center min-h-[60vh] gap-4">
           <h2 className="text-2xl font-serif">Produk tidak ditemukan</h2>
@@ -68,7 +68,7 @@ export default function ProdukDetail({ slug }: Props) {
   const waLink = `https://wa.me/6289518220436?text=${waMessage}`;
 
   return (
-    <div className="min-h-screen bg-background font-sans">
+    <div className="min-h-screen bg-background font-sans pt-16 md:pt-20">
       <Navbar />
 
       {/* BREADCRUMB */}

@@ -137,7 +137,7 @@ export default function Checkout() {
   };
 
   return (
-    <div className="min-h-screen bg-background font-sans">
+    <div className="min-h-screen bg-background font-sans pt-16 md:pt-20">
       <Navbar />
 
       <section className="py-12 md:py-16 px-4 md:px-8 lg:px-16 bg-gradient-to-b from-muted/40 to-background">

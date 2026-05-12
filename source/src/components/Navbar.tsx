@@ -93,7 +93,7 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`sticky top-0 z-50 w-full transition-all duration-500 ${
+      className={`fixed top-0 left-0 right-0 z-50 w-full transition-all duration-500 ${
         scrolled
           ? "bg-background/96 backdrop-blur-md shadow-sm"
           : "bg-background/80 backdrop-blur-sm"

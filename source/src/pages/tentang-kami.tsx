@@ -26,7 +26,7 @@ const milestones = [
 
 export default function TentangKami() {
   return (
-    <div className="min-h-screen bg-background font-sans">
+    <div className="min-h-screen bg-background font-sans pt-16 md:pt-20">
       <Navbar />
 
       {/* HERO */}

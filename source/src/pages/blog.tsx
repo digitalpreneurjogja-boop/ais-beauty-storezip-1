@@ -70,7 +70,7 @@ export default function Blog() {
     .filter((b) => activeCategory === "Semua" || b.cat === activeCategory);
 
   return (
-    <div className="min-h-screen bg-background font-sans">
+    <div className="min-h-screen bg-background font-sans pt-16 md:pt-20">
       <Navbar />
 
       {/* HEADER */}

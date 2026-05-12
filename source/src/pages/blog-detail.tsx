@@ -97,7 +97,7 @@ export default function BlogDetail({ slug }: Props) {
 
   if (!post) {
     return (
-      <div className="min-h-screen bg-background font-sans">
+      <div className="min-h-screen bg-background font-sans pt-16 md:pt-20">
         <Navbar />
         <div className="flex flex-col items-center justify-center min-h-[60vh] gap-4">
           <h2 className="text-2xl font-serif">Artikel tidak ditemukan</h2>
@@ -113,7 +113,7 @@ export default function BlogDetail({ slug }: Props) {
   const relatedSlugs = Object.keys(blogContent).filter((s) => s !== slug).slice(0, 2);
 
   return (
-    <div className="min-h-screen bg-background font-sans">
+    <div className="min-h-screen bg-background font-sans pt-16 md:pt-20">
       <Navbar />
 
       {/* BREADCRUMB */}

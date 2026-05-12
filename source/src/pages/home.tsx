@@ -27,7 +27,7 @@ const blogPreviews = [
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-background font-sans overflow-x-hidden">
+    <div className="min-h-screen bg-background font-sans overflow-x-hidden pt-16 md:pt-20">
       <Navbar />
 
       {/* HERO */}
