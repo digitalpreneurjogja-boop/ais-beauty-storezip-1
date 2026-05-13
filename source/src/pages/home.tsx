@@ -12,7 +12,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ProductCard from "@/components/ProductCard";
 import { products, WHATSAPP } from "@/lib/products";
-import heroBannerImg from "@assets/hero-banner.png";
+import heroWomanImg from "@assets/hero-woman.png";
 
 const testimonials = [
   { name: "Siti Nurhaliza",  initials: "SN", text: "Sangat cocok dengan Bio-Lingzhi. Sirkulasi darah lebih lancar dan badan tidak gampang capek. Sudah 3 bulan konsumsi rutin!", product: "Bio-Lingzhi Pro" },
@@ -46,96 +46,100 @@ export default function Home() {
       <Navbar />
 
       {/* ═══════════════════════════════════════════════════
-          HERO — Split: soft pink left | dark green right
+          HERO — Full background image with responsive overlay
           ═══════════════════════════════════════════════════ */}
-      <section id="beranda" className="relative w-full overflow-hidden" style={{ minHeight: "clamp(520px, 78vh, 740px)" }}>
-
-        {/* ── RIGHT COLUMN: dark green + hero image ── */}
-        <div
-          className="absolute inset-y-0 right-0 w-full md:w-[55%]"
-          style={{ background: "linear-gradient(160deg, #1e5b45 0%, #0b3d2e 60%, #061f18 100%)" }}
-        >
-          {/* Subtle botanical glow */}
-          <div
-            className="absolute inset-0 opacity-20 pointer-events-none"
-            style={{ background: "radial-gradient(ellipse at 60% 40%, #2e8b57 0%, transparent 65%)" }}
-          />
-          <img
-            src={heroBannerImg}
-            alt="AIS Beauty – produk kecantikan dan kesehatan premium"
-            className="w-full h-full object-cover object-center"
-            draggable={false}
-          />
-
-          {/* "Glowing Confident Healthy" circular badge */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.75 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ delay: 0.9, duration: 0.5, type: "spring" }}
-            className="absolute top-8 right-6 w-[88px] h-[88px] rounded-full flex flex-col items-center justify-center text-center z-20"
-            style={{
-              background: "rgba(255,255,255,0.12)",
-              backdropFilter: "blur(8px)",
-              border: "2px solid rgba(255,255,255,0.40)",
-              boxShadow: "0 0 24px rgba(255,255,255,0.15)",
-            }}
-          >
-            <span className="text-[8px] font-bold uppercase leading-tight tracking-widest text-white drop-shadow">
-              Glowing<br />Confident<br />Healthy
-            </span>
-            <span className="text-white text-xs mt-0.5">✦</span>
-          </motion.div>
-        </div>
-
-        {/* ── LEFT COLUMN: soft pink background + content ── */}
-        {/* Diagonal cut / blend between left and right */}
-        <div
-          className="absolute inset-y-0 left-0 w-full md:w-[52%] z-10 pointer-events-none"
-          style={{
-            background: "#fdf6f3",
-            clipPath: "polygon(0 0, 100% 0, 88% 100%, 0 100%)",
-          }}
+      <section
+        id="beranda"
+        className="relative w-full overflow-hidden"
+        style={{ minHeight: "clamp(560px, 82vh, 780px)" }}
+      >
+        {/* ── Background image (full section) ── */}
+        <img
+          src={heroWomanImg}
+          alt="AIS Beauty – produk kecantikan dan kesehatan premium"
+          className="absolute inset-0 w-full h-full object-cover object-center"
+          style={{ objectPosition: "center center" }}
+          draggable={false}
         />
-        {/* Blur gradient at the seam */}
+
+        {/* ── Desktop overlay: gradient left→transparent so right image shows clearly ── */}
         <div
-          className="hidden md:block absolute inset-y-0 z-10 pointer-events-none"
+          className="absolute inset-0 hidden md:block pointer-events-none"
           style={{
-            left: "44%",
-            width: "12%",
-            background: "linear-gradient(to right, #fdf6f3 0%, rgba(253,246,243,0.6) 40%, transparent 100%)",
-            filter: "blur(8px)",
+            background:
+              "linear-gradient(to right, #fdf6f3 0%, rgba(253,246,243,0.96) 20%, rgba(253,246,243,0.82) 38%, rgba(253,246,243,0.35) 58%, transparent 75%)",
           }}
         />
 
-        {/* Left content */}
+        {/* ── Mobile overlay: semi-dark over entire image for text readability ── */}
         <div
-          className="relative z-20 flex flex-col justify-center h-full max-w-7xl mx-auto px-5 md:px-8 lg:px-16"
-          style={{ minHeight: "clamp(520px, 78vh, 740px)", paddingBottom: "clamp(160px, 24vw, 220px)" }}
+          className="absolute inset-0 md:hidden pointer-events-none"
+          style={{ background: "rgba(15,10,8,0.52)" }}
+        />
+
+        {/* ── "Glowing Confident Healthy" badge (desktop only, right side) ── */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.75 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ delay: 0.9, duration: 0.5, type: "spring" }}
+          className="hidden md:flex absolute top-10 right-8 w-[90px] h-[90px] rounded-full flex-col items-center justify-center text-center z-20"
+          style={{
+            background: "rgba(255,255,255,0.14)",
+            backdropFilter: "blur(10px)",
+            border: "2px solid rgba(255,255,255,0.45)",
+            boxShadow: "0 0 28px rgba(255,255,255,0.18)",
+          }}
         >
-          <div className="max-w-[430px]">
+          <span className="text-[8px] font-bold uppercase leading-tight tracking-widest text-white drop-shadow">
+            Glowing<br />Confident<br />Healthy
+          </span>
+          <span className="text-white text-xs mt-0.5">✦</span>
+        </motion.div>
+
+        {/* ── Left content ── */}
+        <div
+          className="relative z-10 flex flex-col justify-center h-full max-w-7xl mx-auto px-5 md:px-8 lg:px-16"
+          style={{
+            minHeight: "clamp(560px, 82vh, 780px)",
+            paddingBottom: "clamp(160px, 24vw, 220px)",
+          }}
+        >
+          {/* Mobile: glass card behind text | Desktop: plain (gradient overlay handles bg) */}
+          <div className="max-w-[440px]">
+
+            {/* Mobile-only glass backdrop */}
+            <div
+              className="md:hidden absolute inset-0 pointer-events-none rounded-3xl"
+              style={{
+                background: "rgba(10,6,4,0.42)",
+                backdropFilter: "blur(16px)",
+                WebkitBackdropFilter: "blur(16px)",
+                border: "1px solid rgba(255,255,255,0.10)",
+              }}
+            />
 
             {/* Badge */}
             <motion.div
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
-              className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest mb-5"
+              className="relative inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest mb-5"
               style={{
-                background: "rgba(217,108,138,0.12)",
-                border: "1px solid rgba(217,108,138,0.28)",
+                background: "rgba(217,108,138,0.15)",
+                border: "1px solid rgba(217,108,138,0.40)",
                 color: "#d96c8a",
               }}
             >
               ✦ #1 Beauty &amp; Wellness
             </motion.div>
 
-            {/* Headline */}
+            {/* Headline — dark on desktop (light gradient bg), white on mobile (dark overlay) */}
             <motion.h1
               initial={{ opacity: 0, y: 18 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.65, delay: 0.1 }}
-              className="font-serif font-bold leading-[1.05] mb-4"
-              style={{ fontSize: "clamp(2rem, 5vw, 3.6rem)", color: "#1a1a1a" }}
+              className="relative font-serif font-bold leading-[1.05] mb-4 text-white md:text-[#1a1a1a]"
+              style={{ fontSize: "clamp(2rem, 5vw, 3.6rem)" }}
             >
               Ais Beauty Store
             </motion.h1>
@@ -145,7 +149,7 @@ export default function Home() {
               initial={{ opacity: 0, scaleX: 0 }}
               animate={{ opacity: 1, scaleX: 1 }}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="flex items-center gap-2 mb-4 origin-left"
+              className="relative flex items-center gap-2 mb-4 origin-left"
             >
               <div className="h-px w-12" style={{ background: "#1e5b45" }} />
               <Leaf className="w-3.5 h-3.5" style={{ color: "#1e5b45" }} />
@@ -157,8 +161,7 @@ export default function Home() {
               initial={{ opacity: 0, y: 14 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.22 }}
-              className="text-base md:text-lg leading-relaxed mb-6"
-              style={{ color: "#3a2a2a" }}
+              className="relative text-base md:text-lg leading-relaxed mb-6 text-white/90 md:text-[#3a2a2a]"
             >
               Produk suplemen{" "}
               <span className="font-semibold" style={{ color: "#f4c542" }}>
@@ -172,12 +175,12 @@ export default function Home() {
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.55, delay: 0.3 }}
-              className="grid grid-cols-2 gap-x-5 gap-y-3 mb-7"
+              className="relative grid grid-cols-2 gap-x-5 gap-y-3 mb-7"
             >
               {benefitIcons.map((b, i) => (
                 <div key={i} className="flex items-center gap-2">
                   <b.icon className="w-4 h-4 flex-shrink-0" style={{ color: "#d96c8a" }} />
-                  <span className="text-xs font-medium" style={{ color: "#4a3030" }}>{b.label}</span>
+                  <span className="text-xs font-medium text-white/90 md:text-[#4a3030]">{b.label}</span>
                 </div>
               ))}
             </motion.div>
@@ -187,7 +190,7 @@ export default function Home() {
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.55, delay: 0.38 }}
-              className="flex flex-wrap gap-3"
+              className="relative flex flex-wrap gap-3"
             >
               <Button
                 asChild
@@ -197,11 +200,11 @@ export default function Home() {
               >
                 <Link href="/produk">Belanja Sekarang</Link>
               </Button>
+              {/* Desktop: pink outline | Mobile: white outline */}
               <Button
                 asChild
                 variant="outline"
-                className="rounded-full h-11 px-7 text-sm font-semibold transition-all duration-300 hover:shadow-md hover:-translate-y-0.5 bg-white/80"
-                style={{ borderColor: "#d96c8a", color: "#d96c8a" }}
+                className="rounded-full h-11 px-7 text-sm font-semibold transition-all duration-300 hover:shadow-md hover:-translate-y-0.5 border-white/60 text-white bg-white/10 md:border-[#d96c8a] md:text-[#d96c8a] md:bg-white/80"
                 data-testid="hero-cta-consult"
               >
                 <a href={WHATSAPP} target="_blank" rel="noopener noreferrer">Konsultasi Gratis</a>
@@ -211,7 +214,7 @@ export default function Home() {
         </div>
 
         {/* ── Products floating row at hero bottom ── */}
-        <div className="absolute bottom-0 left-0 right-0 z-30 px-4 md:px-8 lg:px-16">
+        <div className="absolute bottom-0 left-0 right-0 z-20 px-4 md:px-8 lg:px-16">
           <div className="max-w-7xl mx-auto">
             <div className="flex items-end gap-3 md:gap-4 pb-0 overflow-x-auto hide-scrollbar">
               {products.map((p, i) => (
@@ -228,14 +231,13 @@ export default function Home() {
                     className="flex flex-col items-center gap-2 cursor-pointer select-none group"
                     data-testid={`hero-product-${p.slug}`}
                   >
-                    {/* Card */}
                     <div
                       className="rounded-2xl flex flex-col items-center gap-2 p-3"
                       style={{
                         background: "rgba(255,255,255,0.92)",
                         backdropFilter: "blur(12px)",
-                        boxShadow: "0 4px 24px rgba(0,0,0,0.12)",
-                        border: "1px solid rgba(255,255,255,0.7)",
+                        boxShadow: "0 4px 24px rgba(0,0,0,0.14)",
+                        border: "1px solid rgba(255,255,255,0.75)",
                         width: "clamp(90px, 13vw, 130px)",
                       }}
                     >
@@ -243,17 +245,13 @@ export default function Home() {
                         src={p.image}
                         alt={p.name}
                         className="object-contain"
-                        style={{
-                          height: "clamp(72px, 10vw, 112px)",
-                          width: "100%",
-                        }}
+                        style={{ height: "clamp(72px, 10vw, 112px)", width: "100%" }}
                         draggable={false}
                       />
                       <div className="w-full text-center">
                         <p className="text-[10px] md:text-xs font-semibold leading-tight" style={{ color: "#2d1b1b" }}>
                           {p.name}
                         </p>
-                        {/* Rating */}
                         <div className="flex items-center justify-center gap-0.5 mt-1">
                           <span className="text-[10px] font-bold" style={{ color: "#1a1a1a" }}>5.0</span>
                           <div className="flex">
