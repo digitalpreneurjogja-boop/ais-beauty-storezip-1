@@ -17,7 +17,7 @@ import heroBannerImg from "@assets/hero-banner.png";
 const testimonials = [
   { name: "Siti Nurhaliza", initials: "SN", text: "Sangat cocok dengan Bio-Lingzhi. Sirkulasi darah lebih lancar dan badan tidak gampang capek. Sudah 3 bulan konsumsi rutin!", product: "Bio-Lingzhi Pro" },
   { name: "Putri Maharani", initials: "PM", text: "Novia membantu menyeimbangkan hormon saya. Kulit jadi jarang jerawatan dan mood lebih stabil. Highly recommended!", product: "Novia" },
-  { name: "Dewi Lestari", initials: "DL", text: "S-GLOW rasanya enak banget dan efeknya luar biasa. Kulit saya glowing parah padahal tanpa makeup tebal. Love it!", product: "S-GLOW Chewable" },
+  { name: "Dewi Lestari", initials: "DL", text: "S-GLOW rasanya enak banget dan efeknya luar biasa. Kulit saya glowing parah padahal tanpa makeup tebal. Love it!", product: "S-GLOW" },
 ];
 
 const blogPreviews = [

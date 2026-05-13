@@ -11,20 +11,20 @@ const testimonials = [
   { name: "Amanda Rahayu", initials: "AR", product: "DVN Collagen", text: "Sejak rutin mengonsumsi DVN Collagen, kulit saya yang awalnya kusam jadi lebih kenyal dan cerah. Flek hitam juga memudar. Sangat merekomendasikan!", rating: 5 },
   { name: "Siti Nurhaliza", initials: "SN", product: "Bio-Lingzhi Pro", text: "Sangat cocok dengan Bio-Lingzhi. Sirkulasi darah lebih lancar dan badan tidak gampang capek. Sudah 3 bulan konsumsi rutin!", rating: 5 },
   { name: "Putri Maharani", initials: "PM", product: "Novia", text: "Novia membantu menyeimbangkan hormon saya. Kulit jadi jarang jerawatan dan mood lebih stabil. Highly recommended untuk wanita aktif!", rating: 5 },
-  { name: "Dewi Lestari", initials: "DL", product: "S-GLOW Chewable", text: "S-GLOW rasanya enak dan efeknya luar biasa. Kulit saya glowing parah padahal tanpa makeup tebal. Love it!", rating: 5 },
+  { name: "Dewi Lestari", initials: "DL", product: "S-GLOW", text: "S-GLOW rasanya enak dan efeknya luar biasa. Kulit saya glowing parah padahal tanpa makeup tebal. Love it!", rating: 5 },
   { name: "Riana Susanti", initials: "RS", product: "DVN Collagen", text: "Sudah 2 bulan pakai DVN Collagen, kulit jadi lebih lembab dan cerah. Orang-orang sering tanya skincare apa yang saya pakai hehe.", rating: 5 },
-  { name: "Fitri Handayani", initials: "FH", product: "S-GLOW Chewable", text: "S-GLOW jadi favorit saya! Enak dimakan kayak camilan sehat. Efeknya nyata banget buat kulit glowing.", rating: 5 },
+  { name: "Fitri Handayani", initials: "FH", product: "S-GLOW", text: "S-GLOW jadi favorit saya! Enak dimakan kayak camilan sehat. Efeknya nyata banget buat kulit glowing.", rating: 5 },
   { name: "Maya Kartika", initials: "MK", product: "Novia", text: "Produk feminine care terbaik yang pernah saya coba. Terima kasih AIS Beauty untuk produk yang berkualitas!", rating: 5 },
   { name: "Budi Santoso", initials: "BS", product: "Erojan", text: "Stamina meningkat drastis setelah konsumsi Erojan. Aktivitas harian lebih optimal dan tidak mudah lelah.", rating: 5 },
   { name: "Hendra Kusuma", initials: "HK", product: "Bio-Lingzhi Pro", text: "Sirkulasi darah terasa lebih lancar dan badan lebih fit. Bio-Lingzhi Pro sudah jadi andalan keluarga kami.", rating: 5 },
   { name: "Linda Permata", initials: "LP", product: "DVN Collagen", text: "Investasi terbaik untuk kulit! DVN Collagen hasilnya nyata dan saya merasa lebih percaya diri setiap hari.", rating: 5 },
-  { name: "Dian Anggraini", initials: "DA", product: "S-GLOW Chewable", text: "Awalnya skeptis, tapi setelah 1 bulan minum S-GLOW, teman-teman mulai komentar kulit saya lebih glowing. I'm sold!", rating: 5 },
+  { name: "Dian Anggraini", initials: "DA", product: "S-GLOW", text: "Awalnya skeptis, tapi setelah 1 bulan minum S-GLOW, teman-teman mulai komentar kulit saya lebih glowing. I'm sold!", rating: 5 },
   { name: "Wahyu Triyono", initials: "WT", product: "Bio-Lingzhi Pro", text: "Bahan alaminya membuat saya percaya diri mengonsumsinya setiap hari. Daya tahan tubuh meningkat signifikan.", rating: 5 },
 ];
 
 const beforeAfterItems = [
   { name: "Rina, 28th", product: "DVN Collagen", duration: "2 Bulan", result: "Kulit lebih cerah, flek berkurang 70%, tekstur lebih halus" },
-  { name: "Sarah, 32th", product: "S-GLOW Chewable", duration: "6 Minggu", result: "Kulit glowing alami, lebih lembab, dan bercahaya" },
+  { name: "Sarah, 32th", product: "S-GLOW", duration: "6 Minggu", result: "Kulit glowing alami, lebih lembab, dan bercahaya" },
   { name: "Nita, 25th", product: "Novia", duration: "1 Bulan", result: "Lebih nyaman, percaya diri meningkat, kulit lebih bersih" },
 ];
 
