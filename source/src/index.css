@@ -58,59 +58,59 @@
   --elevate-1: rgba(0,0,0, .03);
   --elevate-2: rgba(0,0,0, .08);
 
-  /* Primary backgrounds: Cream white (#FFFBF8) */
-  --background: 24 100% 98%;
-  /* Text: Rich brown (#2C1810) */
-  --foreground: 20 46% 12%;
+  /* Primary backgrounds: Soft cream (#fdf6f3) */
+  --background: 20 67% 97%;
+  /* Text: Deep dark (#2d1b1b) */
+  --foreground: 0 24% 14%;
   
-  /* Soft pink (#F2A0AE) */
-  --border: 349 75% 79%;
+  /* Soft blush border */
+  --border: 340 50% 88%;
 
-  /* Soft blush pink (#FFF0F3) */
-  --card: 349 100% 96%;
-  --card-foreground: 20 46% 12%;
-  --card-border: 349 75% 79%;
+  /* Light pink card (#f9e7e7) */
+  --card: 0 71% 95%;
+  --card-foreground: 0 24% 14%;
+  --card-border: 340 50% 88%;
 
-  --popover: 24 100% 98%;
-  --popover-foreground: 20 46% 12%;
-  --popover-border: 349 75% 79%;
+  --popover: 20 67% 97%;
+  --popover-foreground: 0 24% 14%;
+  --popover-border: 340 50% 88%;
 
-  /* Rose gold (#C9968A) */
-  --primary: 11 36% 66%;
-  --primary-foreground: 24 100% 98%;
+  /* Premium pink (#d96c8a) */
+  --primary: 344 59% 64%;
+  --primary-foreground: 0 0% 100%;
 
-  /* Luxury gold (#C8A97E) */
-  --secondary: 34 40% 64%;
-  --secondary-foreground: 24 100% 98%;
+  /* Soft peach secondary */
+  --secondary: 10 80% 90%;
+  --secondary-foreground: 0 24% 14%;
 
-  /* Warm beige (#FAF3EC) */
-  --muted: 33 50% 95%;
-  --muted-foreground: 25 12% 49%;
+  /* Warm cream muted (#fdf6f3) */
+  --muted: 20 50% 95%;
+  --muted-foreground: 0 10% 50%;
 
-  /* Soft pink (#F2A0AE) */
-  --accent: 349 75% 79%;
-  --accent-foreground: 24 100% 98%;
+  /* Blush accent (#f9e7e7) */
+  --accent: 0 71% 94%;
+  --accent-foreground: 0 24% 14%;
 
   --destructive: 0 84% 60%;
   --destructive-foreground: 0 0% 100%;
 
-  --input: 349 75% 79%;
-  --ring: 11 36% 66%;
+  --input: 340 50% 88%;
+  --ring: 344 59% 64%;
   
-  --chart-1: 11 36% 66%;
-  --chart-2: 34 40% 64%;
-  --chart-3: 349 75% 79%;
-  --chart-4: 33 50% 95%;
-  --chart-5: 25 12% 49%;
+  --chart-1: 344 59% 64%;
+  --chart-2: 10 80% 90%;
+  --chart-3: 0 71% 94%;
+  --chart-4: 20 50% 95%;
+  --chart-5: 0 10% 50%;
 
-  --sidebar: 24 100% 98%;
-  --sidebar-foreground: 20 46% 12%;
-  --sidebar-border: 349 75% 79%;
-  --sidebar-primary: 11 36% 66%;
-  --sidebar-primary-foreground: 24 100% 98%;
-  --sidebar-accent: 33 50% 95%;
-  --sidebar-accent-foreground: 20 46% 12%;
-  --sidebar-ring: 11 36% 66%;
+  --sidebar: 20 67% 97%;
+  --sidebar-foreground: 0 24% 14%;
+  --sidebar-border: 340 50% 88%;
+  --sidebar-primary: 344 59% 64%;
+  --sidebar-primary-foreground: 0 0% 100%;
+  --sidebar-accent: 20 50% 95%;
+  --sidebar-accent-foreground: 0 24% 14%;
+  --sidebar-ring: 344 59% 64%;
 
   --app-font-sans: 'Inter', sans-serif;
   --app-font-serif: 'Cormorant Garamond', serif;

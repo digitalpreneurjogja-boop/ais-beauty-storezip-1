@@ -1,0 +1,118 @@
+Redesign total homepage menjadi premium beauty & wellness ecommerce landing page seperti referensi gambar yang diberikan.
+
+DESIGN STYLE:
+- Luxury feminine aesthetic
+- Clean modern beauty ecommerce
+- Soft pastel pink, nude, peach, cream gradient
+- Elegant Korean skincare branding style
+- Premium high-converting landing page
+- Smooth shadow & soft glassmorphism
+- Spacious layout with modern composition
+- Elegant serif typography mix sans-serif modern
+
+HEADER:
+- Transparent sticky navbar
+- Blur background ketika scroll
+- Logo kiri
+- Menu tengah:
+  Beranda
+  Produk
+  Tentang Kami
+  Testimoni
+  Blog
+  Kontak
+- Icon search & cart
+- Button WhatsApp rounded pink gradient
+- Smooth hover animation
+
+HERO SECTION:
+Gunakan layout cinematic premium ecommerce.
+
+KIRI:
+- Badge kecil rounded:
+  "#1 Beauty & Wellness"
+- Headline luxury besar:
+  "Beauty Starts From Within"
+- Deskripsi singkat premium
+- Benefit icon horizontal:
+  - 100% Original
+  - Aman & Berkualitas
+  - Teruji Klinis
+  - Terpercaya Ribuan Customer
+
+KANAN:
+- Model wanita tampil besar landscape/full horizontal
+- Posisi model sebagai background hero utama
+- Gunakan object-fit: contain
+- Jangan crop wajah atau tubuh model
+- Tambahkan soft blur glow background
+
+PRODUCT SHOWCASE:
+- Produk TIDAK di bawah section
+- Produk tampil DI DEPAN model wanita
+- Produk berjajar horizontal floating foreground
+- Gunakan layering modern premium ads Korea
+- Produk overlap dengan hero section
+- Tambahkan depth effect cinematic
+
+POSITIONING:
+- Model wanita:
+  position absolute/right
+  z-index rendah
+- Produk:
+  position absolute bottom-center
+  z-index lebih tinggi
+- Produk sedikit overlap ke section bawah
+- Produk menjadi fokus utama conversion
+
+PRODUCT STYLE:
+- Produk lebih besar dan premium
+- Soft elegant shadow
+- Floating animation ringan
+- Gradient glow di belakang produk
+- Jangan crop produk
+- Gunakan object-fit: contain
+- Semua image landscape horizontal
+
+BOTTOM INFO BAR:
+Tambahkan floating info card modern:
+- Pengiriman Cepat
+- Pembayaran Aman
+- Konsultasi Gratis
+- Trusted by Thousands
+
+STYLE DETAILS:
+- Border radius besar 24px–40px
+- Elegant shadow
+- Smooth fade-up animation
+- Hover transition lembut
+- Clean luxury spacing
+- High-end skincare ecommerce feel
+- SEO friendly
+- Fast loading
+- Modern responsive layout
+
+RESPONSIVE MOBILE:
+- Hero stack vertical
+- Produk menjadi horizontal slider
+- Navbar hamburger
+- Image tetap proporsional
+- Hindari tabrakan teks & produk
+
+COLOR PALETTE:
+- #fdf6f3
+- #f9e7e7
+- #d96c8a
+- #2d1b1b
+- #ffffff
+
+TECH:
+- Tailwind CSS
+- Modern animation
+- Smooth scrolling
+- Sticky navbar
+- Optimized performance
+
+FINAL RESULT:
+Buat tampilan seperti premium Korean beauty ecommerce brand:
+clean, elegant, luxury, feminine, soft, high conversion, modern cinematic composition.

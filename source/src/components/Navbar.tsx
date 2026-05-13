@@ -93,11 +93,13 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 w-full transition-all duration-500 ${
-        scrolled
-          ? "bg-background/96 backdrop-blur-md shadow-sm"
-          : "bg-background/80 backdrop-blur-sm"
-      } border-b border-border/40 h-16 md:h-20 flex items-center justify-between px-4 md:px-8 lg:px-16`}
+      className={`fixed top-0 left-0 right-0 z-50 w-full transition-all duration-500 h-16 md:h-20 flex items-center justify-between px-4 md:px-8 lg:px-16 ${scrolled ? "shadow-sm" : ""}`}
+      style={{
+        background: scrolled ? "rgba(253,246,243,0.96)" : "rgba(253,246,243,0.80)",
+        backdropFilter: "blur(16px)",
+        WebkitBackdropFilter: "blur(16px)",
+        borderBottom: "1px solid rgba(217,108,138,0.15)",
+      }}
       data-testid="navbar"
     >
       {/* LOGO */}
@@ -169,7 +171,8 @@ export default function Navbar() {
 
         <Button
           asChild
-          className="hidden md:flex bg-green-600 hover:bg-green-700 text-white rounded-full px-5 h-9 text-sm transition-all duration-200 shadow-sm hover:shadow-md"
+          className="hidden md:flex text-white rounded-full px-5 h-9 text-sm transition-all duration-200 shadow-sm hover:shadow-md border-0"
+          style={{ background: "linear-gradient(135deg, #d96c8a 0%, #c45073 100%)" }}
           data-testid="nav-whatsapp"
         >
           <a href={WHATSAPP} target="_blank" rel="noopener noreferrer">
